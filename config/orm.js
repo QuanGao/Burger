@@ -19,8 +19,8 @@ const orm = {
         })
     },
     
-    updateOne: function (tb, newObj, condition) {
-        let querystring = `UPDATE ${tb} SET ${newObj} WHERE ${condition}`;
+    updateOne: function (tb, updatedObj, condition, cb) {
+        let querystring = `UPDATE ${tb} SET ${updatedObj} WHERE ${condition}`;
         connection.query(querystring, function (err, result) {
             if (err) throw err;
             cb(result);
