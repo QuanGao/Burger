@@ -2,7 +2,7 @@ const mysql = require("mysql");
 
 const connection = mysql.createConnection({
     host: "localhost",
-    database: "db_name",
+    database: "burgers_db",
     user: "root",
     password: "",
     port: 3306

@@ -5,8 +5,17 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/index", function(req, res) {
-    res.render(data);
+router.get("/", function(req, res) {
+
+    burger.allburger(function(data){
+        console.log(data);
+        let hbsObji = {
+            burgers: data
+        };
+        res.render("index", hbsObji)
+    })
+
+
 });
 
 router.post("/api/", function(req, res) {
