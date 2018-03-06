@@ -1,7 +1,16 @@
-<li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+
     {{burger_name}}
 
-    <button class="change-devour" data-id="{{id}}" data-devoured="{{devoured}}">
-        {{#if devoured}} Devoured! {{else}} Devour me! {{/if}}
-    </button>
+    {{#unless devoured}}
+        <button class="change-devour btn-sm btn-outline-warning" data-id="{{id}}" data-devoured="{{devoured}}">
+            Devour me!
+        </button>
+    {{else}}
+        <button class="change-devour btn-sm btn-outline-primary" data-id="{{id}}" data-devoured="{{devoured}}">
+            Clear
+        </button>   
+    {{/unless}}
+
 </li>
