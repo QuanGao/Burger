@@ -12,8 +12,8 @@ const orm = {
     },
 
     insertOne: function (tb, newObj, cb) {
-        let querystring = `INSERT INTO ${tb} SET ${newObj}`
-        connection.query(querystring, function (err, result) {
+        let querystring = `INSERT INTO ${tb} SET ?`
+        connection.query(querystring, newObj, function (err, result) {
             if (err) throw err;
             cb(result);
         })

@@ -13,9 +13,16 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 const routes = require("./controllers/burgersController.js");
-app.use(routes);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
 
+
+const connection = require("./config/connection.js")
+
+connection.connect(function(err) {
+    if (err) throw err;
+    console.log(`connected as id ${connection.threadId}`);
+    app.use(routes);
+});

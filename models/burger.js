@@ -7,7 +7,7 @@ const burger = {
         // orm.selectAll("burgers", function(res){cb(res)})
     },
 
-    addburger: function (tb, newObj, cb) {
+    addburger: function (newObj, cb) {
         orm.insertOne("burgers", newObj, cb)
 
     },

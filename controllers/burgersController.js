@@ -15,11 +15,23 @@ router.get("/index", function(req, res) {
         res.render("index", hbsObji)
     })
 
-
 });
 
-router.post("/api/", function(req, res) {
-    res.send(data);
+router.post("/api/burgers", function (req, res) {
+    // console.log(req.body)
+
+    let newBurgerData = {
+        "burger_name": req.body.burger_name, 
+        "devoured": false
+    }
+    burger.addburger(newBurgerData, function (result) {
+
+        res.json({
+            id:result.insertId
+        });
+        console.log(result.insertId)
+    })
+    
 });
 
 
