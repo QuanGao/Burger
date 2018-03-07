@@ -12,7 +12,7 @@ const burger = {
 
     },
 
-    updateBurger: function (tb, updatedObj, condition, cb) {
+    updateBurger: function (updatedObj, condition, cb) {
         orm.updateOne("burgers", updatedObj, condition, cb)
     }
 }

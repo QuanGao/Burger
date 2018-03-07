@@ -4,11 +4,11 @@
     {{burger_name}}
 
     {{#unless devoured}}
-        <button class="change-devour btn-sm btn-outline-warning" data-id="{{id}}" data-devoured="{{devoured}}">
+        <button class="devourBtn btn-sm btn-outline-warning" data-id="{{id}}" data-devoured="{{devoured}}">
             Devour me!
         </button>
     {{else}}
-        <button class="change-devour btn-sm btn-outline-primary" data-id="{{id}}" data-devoured="{{devoured}}">
+        <button class="clearBtn btn-sm btn-outline-primary" data-id="{{id}}" data-devoured="{{devoured}}">
             Clear
         </button>   
     {{/unless}}
