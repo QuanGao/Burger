@@ -25,6 +25,16 @@ const orm = {
             if (err) throw err;
             cb(result);
         })
+    },
+
+    deleteOne: function (tb, condition, cb) {
+        // let querystring = `DELETE FROM ${tb} WHERE ?`
+        // connection.query(querystring, condition, function (err, result) {
+        let querystring = `DELETE FROM ${tb} WHERE ?`
+        connection.query(querystring, condition, function (err, result) {
+            if (err) throw err;
+            cb(result);
+        })
     }
 }
 
