@@ -8,7 +8,7 @@
 
 * Submit your burger cravings.
 
-![submitBurger](./public/assets/images/1.png =400x)
+<img src="./public/assets/images/1.png" alt="submitBurger" style="width: 200px;"/>
 
 * Add as many as you want!
 
