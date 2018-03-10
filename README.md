@@ -8,20 +8,18 @@
 
 * Submit your burger cravings.
 
-<img src="./public/assets/images/1.png" alt="submitBurger" width="200"/>
-<img src="./public/assets/images/1.png" alt="submitBurger2" width="200">
-<img src="./public/assets/images/1.png" alt="submitBurger2" width="200" height="200">
+<img src="./public/assets/images/1.png" alt="submitBurger" width="450"/>
 
 * Add as many as you want!
 
-![addBurger](./public/assets/images/2.png =400x)
+<img src="./public/assets/images/2.png" alt="[addBurger" width="450"/>
 
 * Mark the burgers as devoured when eaten:
 
-![devourBurger](./public/assets/images/3.png =400x)
+<img src="./public/assets/images/3.png" alt="devourBurger" width="450"/>
 
 * Clear the eaten burger from your page:
 
-![clearBurger](./public/assets/images/4.png =400x)
+<img src="./public/assets/images/4.png" alt="clearBurger" width="450"/>
 
 #### Enjoy!
