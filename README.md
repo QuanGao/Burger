@@ -8,7 +8,9 @@
 
 * Submit your burger cravings.
 
-<img src="./public/assets/images/1.png" alt="submitBurger" style="width: 100px;"/>
+<img src="./public/assets/images/1.png" alt="submitBurger" width="200"/>
+<img src="./public/assets/images/1.png" alt="submitBurger2" width="200">
+<img src="./public/assets/images/1.png" alt="submitBurger2" width="200" height="200">
 
 * Add as many as you want!
 
