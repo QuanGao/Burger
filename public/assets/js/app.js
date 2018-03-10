@@ -1,8 +1,13 @@
 $(function () {
 
+    $("#burgerInput").keyup(function(e){
+        if(e.keyCode === 13){
+        $("#burgerBtn").click();
+        }
+    });
+
     $("#burgerBtn").on("click", function () {
         event.preventDefault();
-
         let name = $("#burgerInput").val().trim();
 
         if (name) {
@@ -17,25 +22,24 @@ $(function () {
     $(".devourBtn").on("click", function () {
         let id = $(this).data("id");
         $.ajax({
-            url: "/api/burgers",
+            url: `/api/burgers/${id}`,
             method: "PUT",
             data: {
                 id: id,
                 devoured: true
             }
-        }).done(function (response) {
-            console.log(response)
+        }).done(function () {
             location.reload();
         });
     })
 
-    $(".clearBtn").on("click", function(event) {
+    $(".clearBtn").on("click", function () {
         let id = $(this).data("id");
-
-        $.ajax(`/api/burgers/${id}`, {
-          method: "DELETE"
+        $.ajax({
+            url: `/api/burgers/${id}`,
+            method: "DELETE"
         }).then(
-          function() {
+            function () {
             location.reload();
         });
     });

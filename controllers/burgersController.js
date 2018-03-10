@@ -24,9 +24,9 @@ router.post("/api/burgers", function (req, res) {
     })
 });
 
-router.put("/api/burgers", function (req, res) {
+router.put("/api/burgers/:id", function (req, res) {
     let condition = {
-        id: req.body.id
+        id: req.params.id
     };
     let toEaten = {
         devoured: true
