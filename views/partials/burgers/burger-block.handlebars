@@ -1,15 +1,13 @@
 
 <li class="list-group-item d-flex justify-content-between align-items-center">
 
-    {{burger_name}}
+    {{id}} . {{burger_name}}
 
     {{#unless devoured}}
         <button class="devourBtn btn-sm btn-outline-warning" data-id="{{id}}">
-        {{!-- <button class="devourBtn btn-sm btn-outline-warning" data-id="{{id}}" data-devoured="{{devoured}}"> --}}
             Devour me!
         </button>
     {{else}}
-        {{!-- <button class="clearBtn btn-sm btn-outline-primary" data-id="{{id}}" data-devoured="{{devoured}}"> --}}
         <button class="clearBtn btn-sm btn-outline-primary" data-id="{{id}}">   
             Clear
         </button>   

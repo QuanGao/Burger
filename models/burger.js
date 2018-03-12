@@ -4,7 +4,6 @@ const burger = {
 
     allburger: function (cb) {
         orm.selectAll("burgers", cb);
-        // orm.selectAll("burgers", function(res){cb(res)})
     },
 
     addburger: function (newObj, cb) {
